@@ -61,8 +61,11 @@ class Cart{
 		vector <string> items;
 		vector <string> item_size;
 		vector <int> items_price2;
-		int total=0;
 	public:
+		int total=0;
+		Cart():total(0){
+			
+		}
 		
 		void check_out(){	
 			cout<<"\nSr. 				Item Name 				Size 				price\n";
@@ -71,7 +74,7 @@ class Cart{
 			}			
 			cout<<"\nTotal Bill: "<<total<<endl;
 		}
-		friend Restaurant;
+		friend class Restaurant;
 		~Cart(){
 		}	
 	};
@@ -215,7 +218,7 @@ void Restaurant:: menu_temp(Cart &c, string restaurant_name, string item_name,st
 	string items_size[3]={items_size1,items_size2, items_size3 };
 	int items_price[3];
 	
-	cout<<"You have chossen "<<restaurant_name<<endl;
+	cout<<"You have chosen "<<restaurant_name<<endl;
 	cout<<"\nSr. 				"<<item_name<<" 			  Starting Price\n";
 	for(int i=0,rem=0;i<3;i++,rem+=400){
 		items_price[i]=price+rem;
@@ -291,14 +294,14 @@ int main(){
 					r=new Dessert();
 				}
 				else{
-					cout<<"Invalid option chossen.\n";
+					cout<<"Invalid option chosen.\n";
 							
 				}			
 				r->show_menu( v);	
 				break;
 			}
 			else{
-				cout<<"Invalid option chossen.\n";
+				cout<<"Invalid option chosen.\n";
 				cout<<"Choose again: ";
 				cin>>option5;					
 			}			
@@ -318,7 +321,7 @@ int main(){
 				return 0;				
 			}
 			else{
-				cout<<"Invalid option chossen.\n";
+				cout<<"Invalid option chosen.\n";
 				cout<<"Add to cart (Y) or Check Out (N)\n";
 				cout<<"Choose again: ";
 				cin>>option5;			
@@ -326,5 +329,4 @@ int main(){
 		}		
 	}
 }
-
 
