@@ -2,7 +2,8 @@
 
 A **console-based Food Delivery Management System** developed using **C++** and **Object-Oriented Programming (OOP)** principles.
 
-![Project Thumbnail](https://github.com/user-attachments/assets/04e3569b-0443-4ac4-9523-4a79b8b2fad4)
+<img width="1024" height="1024" alt="thumbnail" src="https://github.com/user-attachments/assets/01d6e1f6-204d-431a-ba76-0c219487749b" />
+
 
 ---
 
