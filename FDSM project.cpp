@@ -32,7 +32,7 @@ class User{
 					cin.ignore();
 					break;
 				}
-				cout<<"Please, Enter correct number: ";
+				cout<<"Please, Enter correct number (11 digits): ";
 			}		
 	
 			cout<<"Enter your home address: ";
@@ -329,4 +329,5 @@ int main(){
 		}		
 	}
 }
+
 
